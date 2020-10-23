@@ -1,0 +1,58 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-control {
+    
+    width: 40%;
+    min-width: 200px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: auto;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 4px solid rgb(0, 209, 0);
+}
+
+.form-control:focus {
+   
+    box-shadow: none;
+}
+
+.animate{
+    animation-name: animate;
+    animation-duration: 4s;
+}
+
+.clue{
+    font-size: 20px;
+}
+
+.tick{
+    color: rgb(55, 236, 0);
+}
+
+#win-result{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrong-color{
+    color:  rgb(255, 0, 0);
+}
+
+@keyframes animate{
+   0%{opacity: 0;}
+   100%{opacity: 1;} 
+}
+
+@media (max-width:400px){
+    .p-5 {
+        padding: .5rem!important;
+    }
+
+    .h1, h1 {
+        font-size: 2rem;
+    }
+}
+
