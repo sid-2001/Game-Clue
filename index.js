@@ -30,6 +30,9 @@ submit.addEventListener("click",() =>{
         response.appendChild(wrong)
 
         // response.lastChild.classList.add("far","fa-times-circle", "fa-4x")
+        setTimeout(() => {
+            response.innerText = "Enter the answer to activate link"
+        }, 3000);
         console.log("Wrong Answer")
     }
     answer.value = ""
