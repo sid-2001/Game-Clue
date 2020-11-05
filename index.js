@@ -4,7 +4,6 @@ var submit = document.getElementById("submit")
 var response = document.getElementById("response")
 var winResult = document.getElementById("win-result")
 var looseResult = document.getElementById("loose-result")
-var verify = "github";
 // looseResult.style.display = "none"
 winResult.style.display = "none"
 var link = document.getElementById("answer-here")
@@ -14,11 +13,11 @@ wrong.appendChild(i)
 i.classList.add("far","fa-times-circle", "fa-4x", "wrong-color")
 
 submit.addEventListener("click",() =>{
-    console.log(answer.value)
-    console.log(answer.value.toLowerCase());
+    // console.log(answer.value)
+    // console.log(answer.value.toLowerCase());
     
-    if(verify === answer.value.toLowerCase()){
-        console.log("Congratulations")
+    if("git" === answer.value.toLowerCase()){
+        // console.log("Congratulations")
         response.innerText = "Congrats You Can Proceed"
         link.setAttribute("href","https://www.google.com/")
         inputSection.style.display = "none"
@@ -33,7 +32,7 @@ submit.addEventListener("click",() =>{
         setTimeout(() => {
             response.innerText = "Enter the answer to activate link"
         }, 3000);
-        console.log("Wrong Answer")
+        // console.log("Wrong Answer")
     }
     answer.value = ""
 

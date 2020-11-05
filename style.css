@@ -2,6 +2,13 @@ body{
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
 }
+img{
+    /* position: absolute; */
+    width: 150px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+}
 
 .form-control {
     
@@ -70,7 +77,16 @@ body{
    100%{opacity: 1;} 
 }
 
-@media (max-width:400px){
+@media (max-width:460px){
+    h2{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    img{
+        width: 100px;
+    }
     .p-5 {
         padding: .5rem!important;
     }
@@ -79,4 +95,3 @@ body{
         font-size: 2rem;
     }
 }
-
