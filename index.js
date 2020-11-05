@@ -19,7 +19,7 @@ submit.addEventListener("click",() =>{
     if("git" === answer.value.toLowerCase()){
         // console.log("Congratulations")
         response.innerText = "Congrats You Can Proceed"
-        link.setAttribute("href","https://www.google.com/")
+        link.setAttribute("href","https://sid-2001.github.io/getfirstClue/")
         inputSection.style.display = "none"
         winResult.style.display = ""
         winResult.classList.add("animate")
